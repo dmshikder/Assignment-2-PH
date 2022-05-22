@@ -9,16 +9,6 @@ body {
 
 /* hero section  */
 
-/* .hero {
-  background-color: #2d25a0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px;
-  gap: 20px;
-  color: #ffffff;
-} */
-
 .hero {
   background-color: #2d25a0;
   display: grid;
@@ -93,4 +83,182 @@ body {
 .footer-icon {
   color: #b2b2b6;
   font-size: 25px;
+}
+
+/* responsive  */
+
+/* for small device  */
+
+@media screen and (max-width: 599px) {
+  /* hero section  */
+
+  .hero {
+    background-color: #2d25a0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    gap: 20px;
+    color: #ffffff;
+  }
+  .hero-title {
+    margin-left: 10px;
+  }
+
+  .hero img {
+    width: 100%;
+    margin-left: auto;
+    margin-top: 20px;
+  }
+  .btn {
+    background-color: #e02c6d;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    color: #ffffff;
+    margin-left: 90px;
+  }
+  .btn:hover {
+    background-color: rgb(169, 255, 88);
+    color: black;
+    font-weight: 800;
+  }
+
+  /* players section  */
+  .players {
+    display: flex;
+    flex-direction: column;
+  }
+  .players img {
+    width: 100%;
+  }
+  .single-player {
+    border: 3px solid rgb(169, 255, 88);
+    padding: 10px;
+    box-shadow: 10px 10px 8px #888888;
+  }
+
+  /* additional  */
+  .club-name a {
+    text-decoration: none;
+    font-size: 18px;
+  }
+  .video {
+    width: 350px;
+  }
+  .club-name a:hover {
+    color: black;
+
+    background-color: rgb(169, 255, 88);
+    padding: 4px;
+    border-radius: 5px;
+  }
+
+  .additional-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+  }
+
+  /* Footer section  */
+  .footer {
+    text-align: center;
+    padding: 30px;
+  }
+  .footer-icon {
+    color: #b2b2b6;
+    font-size: 25px;
+  }
+  .footer img {
+    width: 100%;
+  }
+}
+
+/* for tablet  */
+
+/* for small device  */
+
+@media screen and (min-width: 600px) and (max-width: 991px) {
+  /* hero section  */
+
+  .hero {
+    background-color: #2d25a0;
+    display: flex;
+
+    padding: 20px;
+
+    color: #ffffff;
+  }
+  .hero-title {
+    margin-left: 80px;
+  }
+
+  .hero img {
+    width: 60%;
+    margin-left: 200px;
+  }
+  .btn {
+    background-color: #e02c6d;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    color: #ffffff;
+  }
+  .btn:hover {
+    background-color: rgb(169, 255, 88);
+    color: black;
+    font-weight: 800;
+  }
+
+  /* players section  */
+  .players {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin: 30px;
+  }
+  .players img {
+    width: 100%;
+  }
+  .single-player {
+    border: 3px solid rgb(169, 255, 88);
+    padding: 10px;
+    box-shadow: 10px 10px 8px #888888;
+  }
+
+  /* additional  */
+  .club-name a {
+    text-decoration: none;
+    font-size: 18px;
+  }
+  .video {
+    width: 400px;
+  }
+  .club-name a:hover {
+    color: black;
+
+    background-color: rgb(169, 255, 88);
+    padding: 4px;
+    border-radius: 5px;
+  }
+
+  .additional-info {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  /* Footer section  */
+  .footer {
+    text-align: center;
+    padding: 30px;
+  }
+  .footer-icon {
+    color: #b2b2b6;
+    font-size: 25px;
+  }
+  .footer img {
+    width: 100%;
+  }
 }
