@@ -27,3 +27,12 @@ body {
   border-radius: 8px;
   color: #ffffff;
 }
+
+/* Footer section  */
+.footer {
+  text-align: center;
+}
+.footer-icon {
+  color: #b2b2b6;
+  font-size: 25px;
+}
